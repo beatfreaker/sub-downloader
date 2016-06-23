@@ -42,6 +42,8 @@ var md5sum = function(_startData, _endData) {
 };
 
 var calculateHash = function(file) {
+	startData = "";
+	endData = "";
 	$('.input_box').css('display', 'none');
 	$('.processing_box').css('display', 'block');
 	$('.snackbar').css('display', 'none');

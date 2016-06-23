@@ -5,7 +5,6 @@ var srtFileName = "";
 var getSubtitles = function(hash) {
 	var URL = 'https://subtitle-downloader.herokuapp.com/getSubtitle?lang=en&hash='+hash;
 	$.get(URL, function(res){
-		console.log('response :: ' + res);
 		if(res != "error") {
 			var blob = new Blob([res], {type: "text/plain;charset=utf-8"});
 			saveAs(blob, srtFileName);

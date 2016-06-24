@@ -121,6 +121,13 @@ progress::-webkit-progress-value {
   color: #F9C349;
 }
 
+#logo-img {
+  height: 80px;
+  width: 210px;
+  position: absolute;
+  right: 0;
+}
+
 .spinner {
   margin: 5px auto 10px;
   width: 70px;
